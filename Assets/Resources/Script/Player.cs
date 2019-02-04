@@ -418,7 +418,7 @@ public class Player : MonoBehaviour
         IsGround(col);
     }
 
-    //ダメージは変動値(ダメージなら+ 回復なら-)
+    //ダメージは変動値(ダメージなら- 回復なら+)
     public void Hit(int damage)
     {
         if (damage < 0 && invincibleFlag)
