@@ -6,10 +6,10 @@ public class Button : MonoBehaviour
 {
     enum Mode
     {
-        debug,
+        pc,
         ios
     }
-    Mode mode = Mode.debug;
+    Mode mode = Mode.pc;
 
     public static bool leftButton = false;
     public static bool leftButtonLog = false;
@@ -34,7 +34,7 @@ public class Button : MonoBehaviour
 
         switch (mode)
         {
-            case Mode.debug:
+            case Mode.pc:
                 left = Input.GetKey(KeyCode.Space);
                 right = Input.GetKey(KeyCode.Return);
                 break;
