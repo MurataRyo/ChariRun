@@ -12,7 +12,7 @@ public class NeedleWindEnemy : NeedleEnemy
     public override void Start()
     {
         base.Start();
-        exp = 8;
+        exp = 20;
         //0か1を入れる
         upFlag = Convert.ToBoolean(UnityEngine.Random.Range(0, 2));
         defaultHeight = transform.position.y;

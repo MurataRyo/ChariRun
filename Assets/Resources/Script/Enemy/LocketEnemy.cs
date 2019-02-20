@@ -10,7 +10,7 @@ public class LocketEnemy : Enemy
     public override void Start()
     {
         base.Start();
-        exp = 10;
+        exp = 25;
         rigidbody2 = GetComponent<Rigidbody2D>();
     }
 

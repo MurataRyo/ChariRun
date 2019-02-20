@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
     public const float SWORD_TIME = 0.1f;
 
-    const float END_GRAVITY = 3.5f;   //ボタンを離したときの最低重力
+    const float END_GRAVITY = 3f;   //ボタンを離したときの最低重力
     float gravity = 0f;
     const float GRAVITY_SIZE = -12f;
     bool isGround = false;
@@ -418,7 +418,7 @@ public class Player : MonoBehaviour
         IsGround(col);
     }
 
-    //ダメージは変動値(ダメージなら+ 回復なら-)
+    //ダメージは変動値(ダメージなら- 回復なら+)
     public void Hit(int damage)
     {
         if (damage < 0 && invincibleFlag)

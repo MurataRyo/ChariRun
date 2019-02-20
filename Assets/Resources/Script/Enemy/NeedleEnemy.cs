@@ -8,7 +8,7 @@ public class NeedleEnemy : Enemy
     public override void Start()
     {
         base.Start();
-        exp = 5;
+        exp = 10;
     }
 
     // Update is called once per frame
